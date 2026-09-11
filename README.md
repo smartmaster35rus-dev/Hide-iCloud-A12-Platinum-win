@@ -1,2 +1,2 @@
 # Hide-iCloud-A12--Platinum-win
-Hide iCloud A12+ Platinum - Hide iCloud Account iOS 15 - 26.4
+iCloud visibility research A12+ Platinum - iCloud visibility research Account iOS 15 - 26.4
