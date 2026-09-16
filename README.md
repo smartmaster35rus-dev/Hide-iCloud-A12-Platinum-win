@@ -2,14 +2,18 @@
 
 **Service toolkit for Apple A12+ devices on Windows**
 
-[![Latest release](https://img.shields.io/github/v/release/smartmaster35rus-dev/Hide-iCloud-Open-menu-A12-Platinum-win?label=Windows&style=for-the-badge)](https://github.com/smartmaster35rus-dev/Hide-iCloud-Open-menu-A12-Platinum-win/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-blue?style=for-the-badge&logo=windows)](https://github.com/smartmaster35rus-dev/Hide-iCloud-Open-menu-A12-Platinum-win/releases)
+[![Latest release](https://img.shields.io/github/v/release/smartmaster35rus-dev/Hide-iCloud-A12-Platinum-win?label=Windows&style=for-the-badge)](https://github.com/smartmaster35rus-dev/Hide-iCloud-A12-Platinum-win/releases/latest)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-blue?style=for-the-badge&logo=windows)](https://github.com/smartmaster35rus-dev/Hide-iCloud-A12-Platinum-win/releases)
 [![Website](https://img.shields.io/badge/Site-smartmaster35rus.ru-00c853?style=for-the-badge)](https://smartmaster35rus-activator.ru/)
 
 <p align="center">
 
-[⬇️ Download latest release](https://github.com/smartmaster35rus-dev/Hide-iCloud-Open-menu-A12-Platinum-win/releases/latest) · [📋 Supported models](https://smartmaster35rus-activator.ru/compatible.php) · [🌐 Activator site](https://smartmaster35rus-activator.ru/)
+[⬇️ Download latest release](https://github.com/smartmaster35rus-dev/Hide-iCloud-A12-Platinum-win/releases/latest) · [📋 Supported models](https://smartmaster35rus-activator.ru/compatible.php) · [🌐 Activator site](https://smartmaster35rus-activator.ru/)
 
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/workspace-overview.jpg" alt="Hide iCloud Open menu A12+ Platinum — рабочее место сервиса" width="92%">
 </p>
 
 ---
@@ -18,25 +22,25 @@
 
 **Hide iCloud Open menu A12+ Platinum** — Windows-приложение для сервисных процедур на iPhone и iPad с чипами **Apple A12 и новее**: подготовка устройства, доставка конфигурации с сервера, настройка после активации, live-журнал и интерфейс Platinum.
 
-Поддерживаются актуальные версии iOS, включая **26.2–27.x**. Для более ранних билдов доступны проверенные сценарии доставки из предыдущих веток продукта.
+Поддерживаются актуальные версии iOS, включая **26.2–27.0.beta4**. Для более ранних билдов доступны проверенные сценарии доставки из предыдущих веток продукта.
 
 ## 🇬🇧 About
 
 **Hide iCloud Open menu A12+ Platinum** is a Windows desktop app for **Apple A12+** service workflows: device preparation, server-side configuration delivery, post-activation options, live log, Platinum UI.
 
-Supports current iOS releases including **26.2–27.x**, with legacy delivery paths for older builds.
+Supports current iOS releases including **26.2–27.0.beta4**, with legacy delivery paths for older builds.
 
 ---
 
 ## 📸 Screenshots
 
-| Main window | Post-activation options |
+| Main window · device connected | Post-activation options & live log |
 |:---:|:---:|
-| | |
+| <img src="docs/screenshots/main-window.png" alt="Main window — iPhone 11, iOS 27, START" width="420"> | <img src="docs/screenshots/main-window.png" alt="Post-activation checkboxes and journal" width="420"> |
 
-| Live log | Completion screen |
-|:---:|:---:|
-| | |
+| Success / completion dialog |
+|:---:|
+| <img src="docs/screenshots/success-dialog.jpg" alt="Activation success dialog" width="560"> |
 
 ---
 
@@ -57,7 +61,7 @@ Supports current iOS releases including **26.2–27.x**, with legacy delivery pa
 
 ## ⬇️ Download
 
-Перейдите в **[Releases](https://github.com/smartmaster35rus-dev/Hide-iCloud-Open-menu-A12-Platinum-win/releases/latest)**:
+Перейдите в **[Releases](https://github.com/smartmaster35rus-dev/Hide-iCloud-A12-Platinum-win/releases/latest)**:
 
 | File | Purpose |
 |------|---------|
@@ -65,6 +69,17 @@ Supports current iOS releases including **26.2–27.x**, with legacy delivery pa
 | `hide_icloud_open_menu_a12_platinum_setup.exe` | Установщик Inno Setup |
 
 > ⚠️ Запуск **от имени администратора**. Нужен USB-кабель и драйвер Apple Mobile Device.
+
+### Как публиковать новый релиз (для maintainer)
+
+GitHub **не подхватывает** exe из папки `dist/` автоматически — релиз создаётся вручную или тегом:
+
+```powershell
+# после сборки nutika_build.bat
+gh release create v3.0.0.2 dist\hide_icloud_open_menu_a12_platinum_3.0.0.2.exe dist\hide_icloud_open_menu_a12_platinum_setup.exe --title "Hide iCloud Open menu A12+ Platinum v3.0.0.2" --notes-file RELEASE_3.0.0.2.md
+```
+
+Тег лучше в формате **`v3.0.0.2`** (без точки после `v`), чтобы badge и «Latest release» отображались корректно.
 
 ---
 
@@ -90,8 +105,9 @@ Supports current iOS releases including **26.2–27.x**, with legacy delivery pa
 
 ## 📝 Changelog
 
-Полные заметки — в [Releases](https://github.com/smartmaster35rus-dev/Hide-iCloud-Open-menu-A12-Platinum-win/releases).
+Полные заметки — в [Releases](https://github.com/smartmaster35rus-dev/Hide-iCloud-A12-Platinum-win/releases).
 
+**v3.0.0.2** — Developer Mode 2× для AirLift, passcode popup, UI без сжатия, cap 27.0.beta4  
 **v3.0.0.1** — iOS 26.2–27, post-activation, обновлённый канал доставки  
 **v2.0.0.x** — базовый Platinum UI и классические сценарии
 

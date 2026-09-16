@@ -1,0 +1,18 @@
+# Подсказка при push тега: GitHub покажет, что workflow есть.
+# Сами exe всё равно прикрепляйте через gh release create (см. README).
+name: Release tag check
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  validate-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tag pushed
+        run: |
+          echo "Tag ${{ github.ref_name }} pushed."
+          echo "Attach build artifacts with:"
+          echo "  gh release create ${{ github.ref_name }} dist/*.exe --notes-file RELEASE_*.md"
