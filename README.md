@@ -70,17 +70,6 @@ Supports current iOS releases including **26.2–27.0.beta4**, with legacy deliv
 
 > ⚠️ Запуск **от имени администратора**. Нужен USB-кабель и драйвер Apple Mobile Device.
 
-### Как публиковать новый релиз (для maintainer)
-
-GitHub **не подхватывает** exe из папки `dist/` автоматически — релиз создаётся вручную или тегом:
-
-```powershell
-# после сборки nutika_build.bat
-gh release create v3.0.0.2 dist\hide_icloud_open_menu_a12_platinum_3.0.0.2.exe dist\hide_icloud_open_menu_a12_platinum_setup.exe --title "Hide iCloud Open menu A12+ Platinum v3.0.0.2" --notes-file RELEASE_3.0.0.2.md
-```
-
-Тег лучше в формате **`v3.0.0.2`** (без точки после `v`), чтобы badge и «Latest release» отображались корректно.
-
 ---
 
 ## 📋 Requirements
